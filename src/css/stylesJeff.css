@@ -1,0 +1,171 @@
+h1 {
+    font-family: 'League Spartan';
+    font-size: 70px;
+    margin-bottom: 7px;
+}
+
+p {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 18px;
+}
+
+body {
+    margin: 0;
+}
+
+/* ESTILOS SECCION HEADER */
+header {
+    /* border: solid 1px red; */
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 70px;
+    padding-left: 90px;
+}
+
+header nav {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    padding-right: 30px;
+    font-size: 17px;
+}
+
+nav a:hover {
+    color: #87cff2;
+}
+
+.logo img {
+    height: 100px;
+}
+
+
+/* ESTILOS SECCION ADOPTA */
+.adopt-slider {
+    /* border: solid 1px red; */
+    height: 410px;
+    margin-top: 10px;
+    overflow: hidden;
+    padding-top: 50px;
+    text-align: center;
+    white-space: nowrap;;
+}
+
+.adopt-slides {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.adopt-slide {
+    min-width: 100%;
+    box-sizing: border-box;
+    padding-right: 80px;
+}
+
+.adopt-slide img {
+    width: 350px;
+    height: 350px;
+    margin-left: 60px;
+}
+
+/* DIV INFERIOR SECCION ADOPTA */
+#adopt-barra-inferior {
+    /* border: solid 1px blue; */
+    width: 90%;
+    height: 100px;
+    margin-left: 5%;
+    margin-right: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #87cff2;
+}
+
+#btnAdopt {
+    width: 300px;
+    height: 50px;
+    border-radius: 25px;
+    border: none;
+    color: #87cff2;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    background-color: white;
+    cursor: pointer;
+}
+
+.adopt-btnPrev {
+    background: url(../img/jeff/captura-prev.PNG) no-repeat;
+    width: 63px;
+    height: 57px;
+    background-color: white;
+    border: none;
+    margin-right: 50px;
+    cursor: pointer;
+}
+
+.adopt-btnNext {
+    background: url(../img/jeff/captura-next.PNG) no-repeat;
+    width: 63px;
+    height: 57px;
+    background-color: white;
+    border: none;
+    margin-left: 50px;
+    cursor: pointer;
+}
+
+/* ESTILOS SECCION TESTIMONIOS */
+.test-slider {
+    /*  border: solid 1px red; */
+    max-width: 50%;
+    height: 300px;  /* 200px */
+    margin: auto;
+    margin-top: 10px;
+    overflow: hidden;
+    padding-top: 10px;
+    text-align: center;
+}
+
+.test-slides {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.test-slide {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+/* .btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-180%);
+    background-color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    width: 100px;
+    height: 100px;
+    margin-left: 40px;
+    margin-right: 40px;
+} */
+
+.test-btnPrev {
+    left: 10px;
+}
+
+.test-btnNext {
+    right: 10px;
+}
+
+.testUpper {
+    /* border: solid 1px blue; */
+    margin: auto;
+    margin-top: 100px;
+    max-width: 600px;
+}
