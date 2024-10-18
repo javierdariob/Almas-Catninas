@@ -5,10 +5,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="src/css/styles.css">
+    <script src="https://www.bing.com/api/maps/mapcontrol?callback=GetMap&key=TU_API_KEY" async defer></script>
+    <script src="https://kit.fontawesome.com/5faff86211.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <div class="footer-contact-info">
+        <div id="footer-address"><i class="fa-solid fa-location-dot fa-xl"></i>Dirección completa</div>
+        <div id="footer-celphone-number"><i class="fas fa-phone-alt fa-xl"></i> Teléfono</div>
+        <div id="footer-email"><i class="fas fa-envelope fa-xl"></i> Correo electrónico</div>
+    </div>
     
+    <div id="footer-map-location"></div>
+    
+    <a href="https://wa.me/" target="_blank" id="footer-whatsapp-icon">
+        <i class="fa-brands fa-square-whatsapp fa-4x" style="color: #0ed81b;"></i>
+    </a>
+    <!-- Info -->
+    <div class="footer-container">
+        <div class="footer-left-section">
+            <img src="./src/imgs/Logo-Almas-Catninas.webp" alt="Almas Catninas" class="footer-logo">
+            <p>En Almas Catninas, creamos un entorno donde la adopción de un animal ayuda en el proceso de recuperación.</p>
+            <div class="footer-social-media">
+                <p>Síguenos en:</p>
+                <a href="#" target="_blank"><img src="facebook-icon.png" alt="Facebook"></a>
+                <a href="#" target="_blank"><img src="instagram-icon.png" alt="Instagram"></a>
+            </div>
+        </div>
+        
+        <!-- Horario -->
+        <div class="footer-horario-section">
+            <h3>HORARIO:</h3>
+            <table>
+                <tr><td>Lunes</td><td>9:00 AM - 6:00 PM</td></tr>
+                <tr><td>Martes</td><td>9:00 AM - 6:00 PM</td></tr>
+            </table>
+        </div>
+        
+        <!-- Menu -->
+        <div class="footer-info-section">
+            <h3>INFO:</h3>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Sobre</a></li>
+            </ul>
+        </div>
+        
+        <!-- Form -->
+        <div class="footer-support-form">
+            <h3>¿Quieres apoyar?</h3>
+            <p>¡Déjanos tus datos!</p>
+            <form id="footer-supportForm">
+                <label for="footer-name">Nombre completo:</label>
+                <input type="text" id="footer-name" name="name" required>
+                
+                <label for="footer-whatsapp">Número de WhatsApp:</label>
+                <input type="text" id="footer-whatsapp" name="whatsapp" required>
+                
+                <label for="footer-email">Correo electrónico:</label>
+                <input type="email" id="footer-email" name="email" required>
+                
+                <label for="footer-subject">Asunto:</label>
+                <input type="text" id="footer-subject" name="subject" value="Donar" readonly>
+                
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </div>
+    
+    <script src="src/js/script.js"></script>
 </body>
-
-<script src="src/js/script.js"></script>
 </html>
