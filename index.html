@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="src/css/stylesJeff.css">
+    <link rel="stylesheet" href="src/css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
@@ -16,9 +16,9 @@
     <!-- SECCION HEADER -->
     <header>
 
-        <div class="logo">
-            <a href="index.html"><img src="src/img/jeff/logo1-new.png" alt="Logo 1"></a>
-            <a href="index.html"><img src="src/img/jeff/logo2-new.png" alt="Logo 2"></a>
+        <div class="header-logo">
+            <a href="index.html"><img src="src/img/logo1-new.png" alt="Logo 1"></a>
+            <a href="index.html"><img src="src/img/logo2-new.png" alt="Logo 2"></a>
         </div>
 
         <nav>
@@ -31,25 +31,44 @@
 
     </header>
 
+    <!-- SECCION INTRO -->
+    <section id="sect-intro">
+
+        <div class="intro-container">
+            <div class="intro-container-text">
+                <h2>Fundación Almas Catninas</h2>
+                <h1>Transformamos vidas</h1>
+                <br>
+                <p>En Almas Catninas, creemos en las segundas oportunidades</p>
+                <br>
+                <button>Descubre Más</button>
+            </div>
+            <div class="intro-container-image">
+                <img src="src/img/perro-gato.png" alt="">
+            </div>
+        </div>
+
+    </section>
+
     <!-- SECCION ADOPTA -->
     <section id="sect-adopt">
 
         <div class="adopt-slider">
             <div class="adopt-slides">
                 <div class="adopt-slide active">
-                    <a href="#"><img src="src/img/jeff/mascota1.PNG" alt="mascota1"></a>
-                    <a href="#"><img src="src/img/jeff/mascota2.PNG" alt="mascota2"></a>
-                    <a href="#"><img src="src/img/jeff/mascota3.PNG" alt="mascota3"></a>
+                    <a href="#"><img src="src/img/mascota1.PNG" alt="mascota1"></a>
+                    <a href="#"><img src="src/img/mascota2.PNG" alt="mascota2"></a>
+                    <a href="#"><img src="src/img/mascota3.PNG" alt="mascota3"></a>
                 </div>
                 <div class="adopt-slide">
-                    <a href="#"><img src="src/img/jeff/mascota1.PNG" alt="mascota1"></a>
-                    <a href="#"><img src="src/img/jeff/mascota2.PNG" alt="mascota2"></a>
-                    <a href="#"><img src="src/img/jeff/mascota3.PNG" alt="mascota3"></a>
+                    <a href="#"><img src="src/img/mascota1.PNG" alt="mascota1"></a>
+                    <a href="#"><img src="src/img/mascota2.PNG" alt="mascota2"></a>
+                    <a href="#"><img src="src/img/mascota3.PNG" alt="mascota3"></a>
                 </div>
                 <div class="adopt-slide">
-                    <a href="#"><img src="src/img/jeff/mascota1.PNG" alt="mascota1"></a>
-                    <a href="#"><img src="src/img/jeff/mascota2.PNG" alt="mascota2"></a>
-                    <a href="#"><img src="src/img/jeff/mascota3.PNG" alt="mascota3"></a>
+                    <a href="#"><img src="src/img/mascota1.PNG" alt="mascota1"></a>
+                    <a href="#"><img src="src/img/mascota2.PNG" alt="mascota2"></a>
+                    <a href="#"><img src="src/img/mascota3.PNG" alt="mascota3"></a>
                 </div>
             </div>
         </div>
@@ -65,13 +84,13 @@
     <!-- SECCION TESTIMONIOS -->
     <section id="sect-testimonials">
 
-        <div class="testUpper" style="text-align: center;">
+        <div class="testimonials-upper" style="text-align: center;">
             <h1>Testimonios</h1>
-            <img src="src/img/jeff/estrellas-removebg.png" alt="Imagen estrellas" id="img-align">
+            <img src="src/img/estrellas-removebg.png" alt="Imagen estrellas">
         </div>
-        <div class="test-slider">
-            <div class="test-slides">
-                <div class="test-slide active">
+        <div class="testimonials-slider">
+            <div class="testimonials-slides">
+                <div class="testimonials-slide active">
                     <span>
                         <p>Gracias a Almas Catninas, encontré no solo una nueva oportunidad en mi
                             vida, sino también a mi mejor amigo. Mi perro rescatado me ha dado fuerza y
@@ -81,7 +100,7 @@
                         <p>- Nombre Completo</p>
                     </span>
                 </div>
-                <div class="test-slide">
+                <div class="testimonials-slide">
                     <span>
                         <p>Gracias a Almas Catninas, encontré no solo una nueva oportunidad en mi
                             vida, sino también a mi mejor amigo. Mi perro rescatado me ha dado fuerza y
@@ -91,7 +110,7 @@
                         <p>- Nombre Completo</p>
                     </span>
                 </div>
-                <div class="test-slide">
+                <div class="testimonials-slide">
                     <span>
                         <p>Gracias a Almas Catninas, encontré no solo una nueva oportunidad en mi
                             vida, sino también a mi mejor amigo. Mi perro rescatado me ha dado fuerza y
@@ -102,15 +121,15 @@
                     </span>
                 </div>
             </div>
-            <button class="test-btnPrev btn" onclick="testPrevSlide()"><img src="src/img/jeff/arrow-prev2-new.png"
+            <button class="testimonials-btnPrev testimonials-btn" onclick="testPrevSlide()"><img src="src/img/arrow-prev2-new.png"
                     alt="Imagen prev"></button>
-            <button class="test-btnNext btn" onclick="testNextSlide()"><img src="src/img/jeff/arrow-next2-new.png"
+            <button class="testimonials-btnNext testimonials-btn" onclick="testNextSlide()"><img src="src/img/arrow-next2-new.png"
                     alt="Imagen next"></button>
         </div>
 
     </section>
 
-    <script src="src/js/scriptJeff.js"></script>
+    <script src="src/js/script.js"></script>
 </body>
 
 </html>
