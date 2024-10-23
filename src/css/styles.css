@@ -23,6 +23,7 @@ body {
     margin: 0;
 }
 
+
 /* ESTILOS SECCION HEADER */
 header {
     /* border: solid 1px red; */
@@ -53,6 +54,7 @@ nav a:hover {
 .header-logo img {
     height: 100px;
 }
+
 
 /* ESTILOS SECCION INTRO */
 .intro-container {
@@ -92,15 +94,99 @@ nav a:hover {
     cursor: pointer;
 }
 
-/* .intro-container-image {
-    border: solid 1px violet;
-} */
-
 .intro-container-image img {
     width: 800px;
     height: 600px;
     margin-top: 290px;
 }
+
+
+/* ESTILOS SECCION PORQUE ADOPTAR */
+.why-adopt-container {
+    /* border: solid 1px red; */
+    height: 900px;
+    background-color: #e4f6ff;
+}
+
+#why-adopt-title {
+    /* border: solid blue; */
+    height: 110px;
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 30px;
+}
+
+#why-adopt-title h2 {
+    font-size: 40px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#why-adopt-tbl table{
+    margin: auto;
+}
+
+#why-adopt-tbl td {
+    /* border: solid 1px yellow; */
+    width: 300px;
+    height: 450px; 
+}
+
+#why-adopt-itemsA {
+    /* border: solid 1px red; */
+    width: 210px;
+    height: 360px;
+    margin: auto;
+    margin-top: 70px;
+}
+
+#why-adopt-itemsB {
+    /* border: solid 1px red; */
+    width: 210px;
+    height: 410px;
+    margin: auto;
+}
+
+#why-adopt-image {
+    /* border: solid 1px black; */
+    width: 150px;
+    height: 150px;
+    margin: auto;
+}
+
+#why-adopt-image img {
+    width: 150px;
+    height: 150px;
+}
+
+#radius-img-L {
+    border-top-left-radius: 200px;
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+    border-bottom-left-radius: 150px;
+}
+
+#radius-img-R {
+    border-top-left-radius: 100px;
+    border-top-right-radius: 200px;
+    border-bottom-right-radius: 150px;
+    border-bottom-left-radius: 100px;
+}
+
+#why-adopt-text {
+    /* border: solid 1px violet; */
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    margin: auto;
+    line-height: 1;
+}
+
+#why-adopt-footer-image img {
+    width: 100%;
+    height: 420px;
+    position: relative;
+}
+
 
 /* ESTILOS SECCION ADOPTA */
 .adopt-slider {
@@ -176,6 +262,7 @@ nav a:hover {
     cursor: pointer;
 }
 
+
 /* ESTILOS SECCION TESTIMONIOS */
 .testimonials-slider {
     /*  border: solid 1px red; */
@@ -197,20 +284,6 @@ nav a:hover {
     min-width: 100%;
     box-sizing: border-box;
 }
-
-/* .testimonials-btn {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-180%);
-    background-color: white;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    width: 100px;
-    height: 100px;
-    margin-left: 40px;
-    margin-right: 40px;
-} */
 
 .testimonials-btnPrev {
     position: relative;
