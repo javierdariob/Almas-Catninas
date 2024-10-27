@@ -1,1 +1,288 @@
+<<<<<<< HEAD
 
+=======
+/* Reset Básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* Tipografías */
+h1 {
+    font-family: 'League Spartan';
+    font-size: 70px;
+    margin-bottom: 7px;
+}
+
+h2, h3, p, li, ul, ol, td, label, div, nav, a {
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+h3 {
+    font-size: 50px;
+    color: #dd3f30;
+}
+
+p {
+    font-size: 18px;
+}
+
+/* Enlaces */
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: #87cff2;
+}
+
+/* Listas */
+li {
+    list-style: none;
+}
+
+/* Botones Generales */
+.buttonBlue, #btnAdopt {
+    background-color: #87cff2;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 10px;
+}
+
+.buttonBlue:hover, #btnAdopt:hover {
+    background-color: #57a9df;
+}
+
+/* Sección Header */
+header {
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 70px;
+}
+
+.header-logo img {
+    height: 100px;
+}
+
+header nav {
+    font-weight: bold;
+}
+
+nav a {
+    padding-right: 30px;
+    font-size: 17px;
+}
+
+/* Sección Intro */
+.intro-container {
+    height: 780px;
+    background-color: #e4f6ff;
+    display: flex;
+}
+
+.intro-container-text {
+    width: 40%;
+    padding-left: 90px;
+    padding-top: 100px;
+}
+
+.intro-container-text h2 {
+    color: #dd3f30;
+    font-size: 35px;
+}
+
+.intro-container-text p {
+    font-size: 25px;
+}
+
+/* Imagenes */
+.intro-container-image img {
+    width: 800px;
+    height: 600px;
+    margin-top: 290px;
+}
+
+/* Sección Footer */
+.footer-contact-info {
+    font-weight: 600;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    background-color: #87cff2;
+    padding: 10px 0;
+}
+
+.footer-contact-info div {
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.footer-left-section, .footer-right-section, .footer-support-form, .footer-info-section, .footer-horario-section {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 30%;
+}
+
+.footer-logo {
+    max-width: 150px;
+    margin-bottom: 20px;
+}
+
+.footer-social-media img {
+    width: 24px;
+    margin-right: 10px;
+}
+
+/* Formularios */
+.footer-support-form label, .form-donations label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.footer-support-form input, .form-donations input, .form-donations select {
+    width: 100%;
+    height: 2em;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+    padding: 8px;
+    border: 1px solid #ddd;
+}
+
+/* Estilos Generales */
+#footer-map-location {
+    height: 400px;
+    width: 100%;
+}
+
+#footer-whatsapp-icon {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    z-index: 1000;
+    transition: transform 0.3s ease;
+}
+
+#footer-whatsapp-icon:hover {
+    transform: scale(1.2);
+}
+
+/* Tablas */
+.footer-horario table {
+    margin-top: 10px;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.footer-horario td {
+    padding: 5px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Estilos Sección Conócenos */
+#cono-title {
+    height: 150px;
+    text-align: center;
+    padding-top: 70px;
+}
+
+#tbl-cono td {
+    width: 400px;
+    height: 400px;
+}
+
+#cono-image img {
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+}
+
+#cono-text {
+    text-align: center;
+    margin: auto;
+    line-height: 1.5;
+}
+
+/* Sección Por Qué Adoptar */
+.why-adopt-container {
+    height: 875px;
+    background-color: #e4f6ff;
+}
+
+#why-adopt-title {
+    height: 110px;
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 30px;
+}
+
+#why-adopt-tbl table {
+    margin: auto;
+}
+
+#why-adopt-tbl td {
+    width: 300px;
+    height: 450px;
+}
+
+/* Sliders */
+.adopt-slider, .testimonials-slider {
+    height: 410px;
+    overflow: hidden;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.adopt-slides, .testimonials-slides {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.adopt-slide, .testimonials-slide {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.adopt-slide img, .testimonials-slide img {
+    width: 350px;
+    height: 350px;
+    margin-left: 60px;
+}
+
+.testimonials-upper {
+    max-width: 600px;
+    margin: 100px auto 0;
+}
+
+#btnAdopt {
+    width: 300px;
+    height: 50px;
+    border-radius: 25px;
+    color: #87cff2;
+    background-color: white;
+    cursor: pointer;
+}
+>>>>>>> e0425536149f4246df3222d60dd9c676fb56010b
