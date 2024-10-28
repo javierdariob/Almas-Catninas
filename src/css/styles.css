@@ -1,98 +1,103 @@
-<<<<<<< HEAD
-
-=======
-/* Reset Básico */
+/* 
 * {
     margin: 0;
     padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
+ */
 
-body {
+/*  * {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: solid black 1px;
+} */
+
+p, h3, li, ul, ol, h2, td, label, div, nav, a {
     font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-/* Tipografías */
-h1 {
+#h1-individual {
     font-family: 'League Spartan';
     font-size: 70px;
     margin-bottom: 7px;
 }
 
-h2, h3, p, li, ul, ol, td, label, div, nav, a {
-    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-
-h3 {
+#h3-individual {
     font-size: 50px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: #dd3f30;
 }
 
-p {
+/* #p-individual {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 18px;
+} */
+
+body {
+    margin: 0;
 }
 
-/* Enlaces */
-a {
-    text-decoration: none;
-    color: black;
-}
 
-a:hover {
-    color: #87cff2;
-}
-
-/* Listas */
-li {
-    list-style: none;
-}
-
-/* Botones Generales */
-.buttonBlue, #btnAdopt {
-    background-color: #87cff2;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 16px;
-    padding: 10px;
-}
-
-.buttonBlue:hover, #btnAdopt:hover {
-    background-color: #57a9df;
-}
-
-/* Sección Header */
+/* ESTILOS SECCION HEADER */
 header {
+    /* border: solid 1px red; */
     height: 150px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 70px;
+    padding-right: 70px;
+    padding-left: 90px;
+}
+
+header nav {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+}
+
+#nav-header a {
+    text-decoration: none;
+    color: black;
+    padding-right: 30px;
+    font-size: 17px;
+}
+
+#nav-header a:hover {
+    color: #87cff2;
 }
 
 .header-logo img {
     height: 100px;
 }
 
-header nav {
-    font-weight: bold;
-}
+/* HEADER RESPONSIVE */
+/* @media (max-width:900px){
+    header {
+        flex-direction: column;
+    }
 
-nav a {
-    padding-right: 30px;
-    font-size: 17px;
-}
+    .header-logo img {
+        min-height: 50px;
+    }
 
-/* Sección Intro */
+    nav a {
+        font-size: 12px;
+    }
+} */
+
+
+/* ESTILOS SECCION INTRO */
 .intro-container {
+    /* border: solid 1px black; */
     height: 780px;
     background-color: #e4f6ff;
     display: flex;
 }
 
 .intro-container-text {
+    /* border: solid 1px blue; */
     width: 40%;
     padding-left: 90px;
     padding-top: 100px;
@@ -101,20 +106,380 @@ nav a {
 .intro-container-text h2 {
     color: #dd3f30;
     font-size: 35px;
+    font-family: 'League Spartan';
 }
 
 .intro-container-text p {
     font-size: 25px;
 }
 
-/* Imagenes */
+.intro-container-text button {
+    background-color: #87cff2;
+    color: white;
+    width: 200px;
+    height: 60px;
+    border-radius: 30px;
+    border: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 23px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
 .intro-container-image img {
     width: 800px;
     height: 600px;
     margin-top: 290px;
 }
 
-/* Sección Footer */
+/* ESTILOS SECCION CONÓCENOS */
+#cono-title {
+    /* border: solid 1px yellow; */
+    height: 150px;
+    text-align: center;
+    padding-top: 70px;
+}
+
+.cono-container {
+    /* border: solid 1px black; */
+    height: 500px;
+
+}
+
+#tbl-cono td {
+    /* border: solid 1px red; */
+    width: 400px;
+    height: 400px;
+}
+
+#cono-image {
+    /* border: solid 1px orange; */
+    width: 200px;
+    height: 200px;
+    margin: auto;
+}
+
+#cono-image img {
+    width: 200px;
+    clip-path: circle();
+}
+
+#cono-text {
+    /* border: solid 1px blue; */
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    text-align: center;
+}
+
+
+/* ESTILOS SECCION PORQUE ADOPTAR */
+.why-adopt-container {
+    /* border: solid 1px red; */
+    height: 875px;
+    background-color: #e4f6ff;
+}
+
+#why-adopt-title {
+    /* border: solid blue; */
+    height: 110px;
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 30px;
+}
+
+#why-adopt-title h2 {
+    font-size: 40px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#why-adopt-tbl table {
+    margin: auto;
+}
+
+#why-adopt-tbl td {
+    /* border: solid 1px yellow; */
+    width: 300px;
+    height: 450px;
+}
+
+#why-adopt-itemsA {
+    /* border: solid 1px red; */
+    width: 210px;
+    height: 360px;
+    margin: auto;
+    margin-top: 70px;
+}
+
+#why-adopt-itemsB {
+    /* border: solid 1px red; */
+    width: 210px;
+    height: 410px;
+    margin: auto;
+}
+
+#why-adopt-image {
+    /* border: solid 1px black; */
+    width: 150px;
+    height: 150px;
+    margin: auto;
+}
+
+#why-adopt-image img {
+    width: 150px;
+    height: 150px;
+}
+
+#radius-img-L {
+    border-top-left-radius: 200px;
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+    border-bottom-left-radius: 150px;
+}
+
+#radius-img-R {
+    border-top-left-radius: 100px;
+    border-top-right-radius: 200px;
+    border-bottom-right-radius: 150px;
+    border-bottom-left-radius: 100px;
+}
+
+#why-adopt-text {
+    /* border: solid 1px violet; */
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    margin: auto;
+    line-height: 1;
+}
+
+#why-adopt-footer-image img {
+    width: 100%;
+    height: 420px;
+    position: relative;
+}
+
+
+/* ESTILOS BLOG-FORMULARIO */
+.wrap-section-donations-blog {
+    display: flex;
+    justify-content: center;
+    /* position: fixed; */
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+    background-color: #ffffff;
+}
+
+.section-donations-Blog {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.form-donations {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 450px;
+    height: 600px;
+    background: rgb(244, 244, 244);
+    /* top | right | bottom | left */
+    padding: 50px 15px 30px 15px;
+}
+
+.title-Form-Donations {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-Form-Donations h2 {
+    font-weight: 700;
+}
+
+.title-Form-Donations h3 {
+    font-weight: 10;
+    font-size: small;
+}
+
+.Wrap-form-inputs input,
+.Wrap-form-inputs select,
+.Wrap-form-inputs button {
+    width: 100%;
+    height: 2em;
+
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+}
+
+.buttonBlue {
+    background-color: #87cff2;
+    color: white;
+    border: 0;
+}
+
+.wrap-entry {
+    display: flex;
+    flex-direction: column;
+    justify-items: space-evenly;
+}
+
+.wrap-entry img {
+    width: 225px;
+    height: 150px;
+}
+
+.wrap-entry span {
+    font-weight: 700;
+}
+
+.wrap-entry p {
+    font-weight: 400;
+    font-size: small;
+}
+
+.wrap-grid-blog {
+    width: 700px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    align-items: start;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    padding: 8em;
+
+}
+
+
+/* ESTILOS SECCION ADOPTA */
+.adopt-slider {
+    /* border: solid 1px red; */
+    height: 410px;
+    margin-top: 10px;
+    overflow: hidden;
+    padding-top: 50px;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.adopt-slides {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.adopt-slide {
+    min-width: 100%;
+    box-sizing: border-box;
+    padding-right: 80px;
+}
+
+.adopt-slide img {
+    width: 350px;
+    height: 350px;
+    margin-left: 60px;
+}
+
+/* DIV INFERIOR SECCION ADOPTA */
+#adopt-barra-inferior {
+    /* border: solid 1px blue; */
+    width: 90%;
+    height: 100px;
+    margin-left: 5%;
+    margin-right: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #87cff2;
+}
+
+#btnAdopt {
+    width: 300px;
+    height: 50px;
+    border-radius: 25px;
+    border: none;
+    color: #87cff2;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    background-color: white;
+    cursor: pointer;
+}
+
+.adopt-btnPrev {
+    background: url(../img/captura-prev.PNG) no-repeat;
+    width: 63px;
+    height: 57px;
+    background-color: white;
+    border: none;
+    margin-right: 50px;
+    cursor: pointer;
+}
+
+.adopt-btnNext {
+    background: url(../img/captura-next.PNG) no-repeat;
+    width: 63px;
+    height: 57px;
+    background-color: white;
+    border: none;
+    margin-left: 50px;
+    cursor: pointer;
+}
+
+
+/* ESTILOS SECCION TESTIMONIOS */
+.testimonials-slider {
+    /*  border: solid 1px red; */
+    max-width: 50%;
+    height: 300px;
+    /* 200px */
+    margin: auto;
+    margin-top: 10px;
+    overflow: hidden;
+    padding-top: 10px;
+    text-align: center;
+}
+
+.testimonials-slides {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.testimonials-slide {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.testimonials-btnPrev {
+    position: relative;
+    bottom: 80px;
+    right: 35%;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.testimonials-btnNext {
+    position: relative;
+    bottom: 80px;
+    left: 35%;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.testimonials-upper {
+    /* border: solid 1px blue; */
+    margin: auto;
+    margin-top: 100px;
+    max-width: 600px;
+}
+
+
+/* ESTILOS FOOTER */
 .footer-contact-info {
     font-weight: 600;
     color: white;
@@ -131,48 +496,6 @@ nav a {
     align-items: center;
 }
 
-.footer-container {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-}
-
-.footer-left-section, .footer-right-section, .footer-support-form, .footer-info-section, .footer-horario-section {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    width: 30%;
-}
-
-.footer-logo {
-    max-width: 150px;
-    margin-bottom: 20px;
-}
-
-.footer-social-media img {
-    width: 24px;
-    margin-right: 10px;
-}
-
-/* Formularios */
-.footer-support-form label, .form-donations label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
-}
-
-.footer-support-form input, .form-donations input, .form-donations select {
-    width: 100%;
-    height: 2em;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    border-radius: 4px;
-    padding: 8px;
-    border: 1px solid #ddd;
-}
-
-/* Estilos Generales */
 #footer-map-location {
     height: 400px;
     width: 100%;
@@ -190,7 +513,34 @@ nav a {
     transform: scale(1.2);
 }
 
-/* Tablas */
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.footer-left-section,
+.footer-right-section,
+.footer-support-form,
+.footer-info-section,
+.footer-horario-section {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 30%;
+}
+
+.footer-logo {
+    max-width: 150px;
+    margin-bottom: 20px;
+}
+
+.footer-social-media img {
+    width: 24px;
+    margin-right: 10px;
+}
+
 .footer-horario table {
     margin-top: 10px;
     width: 100%;
@@ -202,87 +552,52 @@ nav a {
     border-bottom: 1px solid #ddd;
 }
 
-/* Estilos Sección Conócenos */
-#cono-title {
-    height: 150px;
-    text-align: center;
-    padding-top: 70px;
+.footer-info ul {
+    margin-top: 10px;
+    list-style: none;
 }
 
-#tbl-cono td {
-    width: 400px;
-    height: 400px;
+.footer-info li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    margin-top: 5px;
+    display: block;
 }
 
-#cono-image img {
-    width: 200px;
-    height: 200px;
-    border-radius: 100px;
+.footer-support-form h3 {
+    margin-bottom: 10px;
 }
 
-#cono-text {
-    text-align: center;
-    margin: auto;
-    line-height: 1.5;
+.footer-support-form p {
+    margin-bottom: 20px;
 }
 
-/* Sección Por Qué Adoptar */
-.why-adopt-container {
-    height: 875px;
-    background-color: #e4f6ff;
+.footer-support-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
 }
 
-#why-adopt-title {
-    height: 110px;
-    text-align: center;
-    margin-top: 20px;
-    padding-top: 30px;
+.footer-support-form input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
 }
 
-#why-adopt-tbl table {
-    margin: auto;
-}
-
-#why-adopt-tbl td {
-    width: 300px;
-    height: 450px;
-}
-
-/* Sliders */
-.adopt-slider, .testimonials-slider {
-    height: 410px;
-    overflow: hidden;
-    text-align: center;
-    white-space: nowrap;
-}
-
-.adopt-slides, .testimonials-slides {
-    display: flex;
-    transition: transform 0.5s ease;
-}
-
-.adopt-slide, .testimonials-slide {
-    min-width: 100%;
-    box-sizing: border-box;
-}
-
-.adopt-slide img, .testimonials-slide img {
-    width: 350px;
-    height: 350px;
-    margin-left: 60px;
-}
-
-.testimonials-upper {
-    max-width: 600px;
-    margin: 100px auto 0;
-}
-
-#btnAdopt {
-    width: 300px;
-    height: 50px;
-    border-radius: 25px;
-    color: #87cff2;
-    background-color: white;
+.footer-support-form button {
+    background-color: #7CC6FE;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    border-radius: 4px;
     cursor: pointer;
+    font-size: 16px;
 }
->>>>>>> e0425536149f4246df3222d60dd9c676fb56010b
+
+.footer-support-form button:hover {
+    background-color: #57a9df;
+}
