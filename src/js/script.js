@@ -55,6 +55,36 @@ function testPrevSlide() {
 //setInterval(nextSlide, 5000);
 
 
+/* SCRIPT LIGHTBOX SECCION WHY-ADOPT */
+const lightbox = document.getElementById('lightbox');
+const lightboxTitle = document.getElementById('lightbox-title');
+const lightboxDescription = document.getElementById('lightbox-description');
+const closeBtn = document.querySelector('.close');
+
+let data;
+
+fetch('src/json/data.json')
+    .then(response => response.json())
+    .then(json => {
+        data = json;
+        document.querySelectorAll('.lightbox-trigger').forEach((item, index) => {
+            item.addEventListener('click', () => {
+                lightbox.style.display = 'flex';
+                lightboxTitle.textContent = data[index].title;
+                lightboxDescription.textContent = data[index].description;
+            });
+        });
+    });
+
+closeBtn.addEventListener('click', () => {
+    lightbox.style.display = 'none';
+});
+
+lightbox.addEventListener('click', () => {
+    lightbox.style.display = 'none';
+});
+
+
 /* SCRIPT FOOTER */
 function GetMap() {
     var map = new Microsoft.Maps.Map('#footer-map-location', {

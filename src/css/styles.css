@@ -259,13 +259,52 @@ header nav {
     position: relative;
 }
 
+/* ESTILOS LIGHTBOX SECCION WHY-ADOPT */
+#why-adopt-tbl div {
+    cursor: pointer;
+}
+
+.lightbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.lightbox-text {
+    color: black;
+    background-color: #e4f6ff;
+    text-align: center;
+    margin: 20px;
+    width: 500px;
+    height: 300px;
+    border: outset 15px #87cff2;
+    padding: 10px;
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: white;
+    font-size: 40px;
+    cursor: pointer;
+}
+
 
 /* ESTILOS BLOG-FORMULARIO */
 .wrap-section-donations-blog {
+    margin-top: 90px;
     display: flex;
     justify-content: center;
     /* position: fixed; */
-    top: 0;
+    /* top: 0; */
     width: 100%;
     z-index: 9999;
     background-color: #ffffff;
@@ -532,7 +571,7 @@ header nav {
 }
 
 .footer-logo {
-    max-width: 150px;
+    max-width: 100px;
     margin-bottom: 20px;
 }
 
