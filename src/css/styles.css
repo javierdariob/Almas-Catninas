@@ -64,6 +64,11 @@ header nav {
     font-size: 17px;
 }
 
+#nav-header a.activo {
+    color: #87cff2;
+    font-weight: bold;
+}
+
 #nav-header a:hover {
     color: #87cff2;
 }
@@ -639,4 +644,23 @@ header nav {
 
 .footer-support-form button:hover {
     background-color: #57a9df;
+}
+
+
+/* ESTILOS PAGES INTRO */
+#pages-intro {
+    /* border: solid 1px red; */
+    height: 150px;
+    background-color: #e4f6ff;
+    text-align: center;
+    line-height: 0;
+    padding-top: 20px;
+}
+
+#pages-intro h2 {
+    font-family: 'League Spartan';
+    font-size: 45px;
+    color: #343434;
+    /* margin-bottom: 20px; */
+    line-height: 0.5;
 }
