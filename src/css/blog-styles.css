@@ -1,0 +1,236 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: solid black 1px;
+    }
+    
+    p, h3, li, ul, ol, h2, td, label, div, nav,a {
+        font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    
+    a{
+        text-decoration: none;
+    }
+    
+    li{
+        list-style: none;
+    }
+    
+    .wrap-section-donations-blog{
+        display: flex;
+        justify-content: center;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 9999;
+        background-color: #ffffff;
+    }
+    
+    .section-donations-Blog{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    
+    .form-donations {
+        display:flex;
+        flex-direction:column;
+        justify-content: space-around;
+        width: 450px;
+        height: 600px;
+        background: rgb(244, 244, 244);
+        /* top | right | bottom | left */
+        padding: 50px 15px 30px 15px; 
+    }
+    
+    .title-Form-Donations{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .title-Form-Donations h2{
+        font-weight: 700;
+    }
+    
+    .title-Form-Donations h3{
+        font-weight: 10;
+        font-size: small;
+    }    
+    
+    .Wrap-form-inputs input,
+    .Wrap-form-inputs select, 
+    .Wrap-form-inputs button{
+    width: 100%;
+    height: 2em;
+    
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    }
+    
+    .buttonBlue{
+        background-color: #87cff2;
+        color: white;
+        border: 0;
+    }
+    
+    .wrap-entry{
+        display: flex;
+        flex-direction: column;
+        justify-items: space-evenly;
+    }
+    
+    .wrap-entry img{
+        width: 225px;
+        height: 150px;
+    }
+    
+    .wrap-entry span{
+        font-weight: 700;
+        }
+    
+    .wrap-entry p{
+        font-weight: 400;
+        font-size: small;
+    }
+    
+    .wrap-grid-blog{
+        width: 700px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        align-items: start;
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+        padding: 8em;
+    
+    }
+    
+    header.main-header-blog{
+        display: flex;
+        justify-content: center;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 9999;
+        background-color: #ffffff;
+    }
+    
+    .wrap-header-blog{
+    width: 1000px;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    z-index: 999;
+    
+    }
+    
+    .wrap-logo-blog{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-basis: 15%;
+    }
+    
+    .wrap-logo-blog img{
+        width: 105px;
+        height: 105px;
+    }
+    
+    .wrap-nav-header{
+    width: 1000px;
+    display: flex;
+    flex-basis:60%;
+    }
+    
+    .nav-header-blog {
+        display: flex;
+        align-items: center;
+        width: 100%;
+    }
+    
+    ul.main-menu-blog{
+    display: flex;
+    width: 100%;
+    z-index: 99;
+    margin: 0;
+    padding: 0;
+    justify-content: space-between;
+    color: black;
+    }
+    
+    li.menu-item{
+    display: flex;
+    margin: 0.75rem;
+    font-weight: 700;
+    color: black;
+    font-size: small;
+    }
+    
+    #nav-blog{
+       color:#87cff2;
+        } 
+    
+    li.menu-item a:hover{
+        color:black;
+        }
+    
+    .wrap-title-blog{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width:100%;
+        height: 315px;
+        background: rgb(228, 246, 255);
+    }
+    
+    
+    
+    .container-main-blog{
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    grid-template-rows:300px 300px;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    justify-content: center;
+    }
+    
+    .image-clip {
+        width: 200px;
+        height: 100px;
+        border-radius: 40px;
+       }
+    
+    .image-mini-clip{
+        width: 20px;
+        height: 10px;
+        clip-path: circle();
+        margin: 0;
+      }  
+    
+    .wrap-story-blog img{
+        width: 100%;
+    }
+    .wrap-story-blog h2{
+        font-weight: 700;
+        color: red;
+    }
+    .wrap-story-blog span{
+        font-style: italic;
+    }
+    
+    .author-blog{
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: row;
+       justify-content: space-between;
+    }
+    
+    span #prueba{
+    width: 100%;
+    }
