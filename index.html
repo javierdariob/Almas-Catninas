@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <!--- fuente de subtitulo-->
@@ -11,40 +11,100 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Delius&family=League+Spartan:wght@700&family=Varela+Round&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="src/css/styles.css">
+    <link rel="stylesheet" href="src/css/styles-About-us.css">
 </head>
 <body>
-    <!-- Encabezado -->
-    <header>
+    <header class="hero-section">
         <h1>Sobre Nosotros</h1>
-        <div class="breadcrumb">Inicio &gt; Sobre nosotros</div>
+        <div class="breadcrumb">Inicio > Sobre nosotros</div>
     </header>
 
-    <!-- Sección Sobre Nosotros -->
-    <section id="about-us">
+    <section id="about-us" class="about-section">
         <div class="section-content">
-            <h2>Sobre Nosotros</h2>
-            <p style="text-align: left;">Somos una fundación comprometida con el bienestar de la comunidad y el desarrollo de proyectos sociales en Catán. Trabajamos para ayudar a los menos favorecidos, impulsando iniciativas que promuevan el cambio social positivo.</p>
-            <img src="url_de_imagen" alt="Imagen de Fundación">
+            <h2>Sobre <span>Nosotros</span></h2>
+            <p>Somos una fundación comprometida con el bienestar de la comunidad y el desarrollo de proyectos sociales en Catán. Trabajamos para ayudar a los menos favorecidos, impulsando iniciativas que promuevan el cambio social positivo.</p>
         </div>
-    </section>
-    <div class="section-images">
-        <h2>Titulo aqui</h2>
-    </div>
-    <!-- Sección Nuestra Misión -->
-    <section id="our-mission">
-        <div class="section-content">
-            <h2>¿Porque somos diferentes?</h2>
-            <p style= "padding-left:100px; margin-left: 20px;">Nuestra misión es brindar apoyo y asistencia a quienes lo necesiten, mediante programas que fortalecen la cohesión social y la inclusión.</p>
+        <div class="sticker-wrapper">
+            <div class="coperar">
+            <img src="src/img-sobre-nosotros/Homeless Shelter.webp"   alt="coperar" >
+            </div>
         </div>
     </section>
 
-    <!-- Pie de página -->
-    <footer>
-        <p>&copy; 2024 Fundación Almas Catáninas. Todos los derechos reservados.</p>
-    </footer>
+    <section class="values-section">
+        <div class="container">
+            <div class="value-card">
+                <img src="src/img-sobre-nosotros/Untitled-design-2023-09-18T104740.webp" alt="Misión" class="circular-image">
+                <h3>Misión</h3>
+                <p>Brindar asistencia y cuidado integral a los animales necesitados, promoviendo su bienestar y una convivencia responsable.</p>
+            </div>
+            
+            <div class="value-card">
+                <img src="src/img-sobre-nosotros/volunteers-giving-food-homeless-people-260nw-1543550867.webp" alt="Visión" class="circular-image">
+                <h3>Visión</h3>
+                <p>Ser referentes en el cuidado animal, creando un impacto positivo en la comunidad a través de nuestras acciones.</p>
+            </div>
+            
+            <div class="value-card">
+                <img src="src/img-sobre-nosotros/OIP.jpg" alt="Valores" class="circular-image">
+                <h3>Valores</h3>
+                <p>Compromiso, respeto, empatía y dedicación en cada una de nuestras acciones por el bienestar animal.</p>
+            </div>
+        </div>
+    </section>
 
+    <section id="our-difference">
+        <div class="mission-container">
+            <div class="mission-image">
+                <img src="src/img-sobre-nosotros/OIP (1).jpg" alt="Perro feliz">
+            </div>
+            
+            <div class="accordion-section">
+                <h2>¿Por qué <span>somos diferentes?</span></h2>
+                <p>En Fundación Almas Cataninas nos distinguimos por nuestro compromiso y dedicación.</p>
+            
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <div class="accordion-title" data-number="01.">Cuidado Integral</div>
+                        <div class="accordion-content">Brindamos atención veterinaria completa y seguimiento personalizado a cada animal rescatado.</div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-title" data-number="02.">Adopción Responsable</div>
+                        <div class="accordion-content">Garantizamos procesos de adopción seguros y responsables, con seguimiento post-adopción.</div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-title" data-number="03.">Educación Comunitaria</div>
+                        <div class="accordion-content">Realizamos programas educativos para promover la tenencia responsable de mascotas.</div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-title" data-number="04.">Red de Apoyo</div>
+                        <div class="accordion-content">Contamos con una amplia red de voluntarios y colaboradores comprometidos.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="stats-section" data-aos="fade-up">
+        <div class="container">
+            <div class="stat-card">
+                <span class="number">500+</span>
+                <p>Animales rescatados</p>
+            </div>
+            <div class="stat-card">
+                <span class="number">300+</span>
+                <p>Adopciones exitosas</p>
+            </div>
+            <div class="stat-card">
+                <span class="number">100+</span>
+                <p>Voluntarios activos</p>
+            </div>
+        </div>
+    </section>
 </body>
+<footer>
+    <p>&copy; 2024 Fundación Almas Cataninas. Todos los derechos reservados.</p>
+</footer>
 
-<script src="src/js/script.js"></script>
+<script src="src/js/script-About-us.js"></script>    
+
 </html>
