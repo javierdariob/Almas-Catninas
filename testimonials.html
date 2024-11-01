@@ -39,8 +39,57 @@
         <p>Inicio > Testimonios</p>
     </section>
 
-    <section class="page-testimonials">
-        <h1>EN CONSTRUCCIÓN...</h1>
+
+    <!-- SECCION MAIN TESTIMONIOS -->
+    <section class="testimonial-main">
+
+        <header class="bg-animate">
+            <section class="contenedor">
+                <div class="video-gallery">
+                    <div class="video-container">
+                        <video id="main-video" controls>
+                            <source src="src/media/video1.mp4" type="video/mp4">
+                            Tu navegador no soporta el video.
+                        </video>
+                    </div>
+                    <ul class="video-thumbnails">
+                        <li>
+                            <video width="120" height="90" onclick="changeVideo('src/media/video1.mp4')" muted>
+                                <source src="src/media/video1.mp4" type="video/mp4">
+                            </video>
+                        </li>
+                        <li>
+                            <video width="120" height="90" onclick="changeVideo('src/media/video2.mp4')" muted>
+                                <source src="src/media/video2.mp4" type="video/mp4">
+                            </video>
+                        </li>
+                        <!-- <li>
+                            <video width="120" height="90" onclick="changeVideo('src/media/video3.mp4')" muted>
+                                <source src="src/media/video3.mp4" type="video/mp4">
+                            </video>
+                        </li> -->
+                    </ul>
+                </div>
+                <div class="banner-img">
+                    <img src="src/img/testimonial/testimonial-image.png" alt="Imagen no Encontrada">
+                </div>
+            </section>
+
+            <div class="burbujas">
+                <div class="burbuja"></div>
+                <div class="burbuja"></div>
+                <div class="burbuja"></div>
+                <div class="burbuja"></div>
+                <div class="burbuja"></div>
+                <div class="burbuja"></div>
+                <div class="burbuja"></div>
+                <div class="burbuja"></div>
+                <div class="burbuja"></div>
+                <div class="burbuja"></div>
+                <div class="burbuja"></div>
+            </div>
+        </header>
+
     </section>
 
 
@@ -120,6 +169,7 @@
 
 
     <script src="src/js/script.js"></script>
+    <script src="src/js/testimonial.js"></script>
 </body>
 
 </html>
