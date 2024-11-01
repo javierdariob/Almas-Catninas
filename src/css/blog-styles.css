@@ -5,8 +5,18 @@
     border: solid black 1px;
 }
 
-p, h3, li, ul, ol, h2, td, label, div, nav, a {
-    font-family: 'Canva Sans', 'Helvetica Neue', sans-serif;
+p,
+h3,
+li,
+ul,
+ol,
+h2,
+td,
+label,
+div,
+nav,
+a {
+    font-family: -apple-system,sans-serif, 'Canva Sans', 'Helvetica Neue', sans-serif;
 }
 
 a {
@@ -17,7 +27,7 @@ li {
     list-style: none;
 }
 
-.main-header-blog{
+.main-header-blog {
     /* border: solid 1px red; */
     display: flex;
     flex-direction: row;
@@ -25,38 +35,41 @@ li {
     justify-items: center;
     align-items: center;
     height: 11rem;
-    flex-wrap: wrap; /* items to wrap to a new line on smaller screens */
+    flex-wrap: wrap;
+    /* items to wrap to a new line on smaller screens */
 
 }
 
 header nav {
-    font-family: 'Canva Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+    font-family: -apple-system, 'Canva Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
     font-weight: bold;
 }
-.header-logo{
+
+.header-logo {
     display: flex;
     flex-direction: row;
-    justify-content: space-around; 
+    justify-content: space-around;
 }
 
 .header-logo,
 .wrap-nav-items {
-  flex-basis: 100%; /* Make each item take up 100% width on smaller screens */
+    flex-basis: 100%;
+    /* Make each item take up 100% width on smaller screens */
 }
 
 
-.wrap-nav-items nav{
+.wrap-nav-items nav {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;    
+    justify-content: space-around;
 }
 
-.nav-header{
-justify-items: center;
+.nav-header {
+    justify-items: center;
 }
 
 #nav-header a {
-   text-decoration: none;
+    text-decoration: none;
     color: black;
     font-size: 0.5;
     width: 11rem;
@@ -77,95 +90,34 @@ justify-items: center;
 }
 
 @media (min-width: 768px) {
+
     /* Styles for medium screens and larger */
     .main-header-blog {
-      flex-wrap: nowrap; /* Prevent wrapping on medium screens and larger */
+        flex-wrap: nowrap;
+        /* Prevent wrapping on medium screens and larger */
     }
-  
+
     .header-logo,
     .wrap-nav-items {
-      flex-basis: auto; /* Let them take up their natural width */
+        flex-basis: auto;
+        /* Let them take up their natural width */
     }
-  }
-
-
-/* header.main-header-blog {
-    display: flex;
-    justify-content: center;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 9999;
-    background-color: #ffffff;
 }
-
-.wrap-header-blog {
-    width: 1000px;
-    display: flex;
-    justify-content: space-between;
-    padding: 1rem;
-    z-index: 999;
-
-}
-
-.wrap-logo-blog {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-basis: 15%;
-}
-
-.wrap-logo-blog img {
-    width: 105px;
-    height: 105px;
-}
-
-.wrap-nav-header {
-    width: 1000px;
-    display: flex;
-    flex-basis: 60%;
-}
-
-.nav-header-blog {
-    display: flex;
-    align-items: center;
-    width: 100%;
-}
-
-ul.main-menu-blog {
-    display: flex;
-    width: 100%;
-    z-index: 99;
-    margin: 0;
-    padding: 0;
-    justify-content: space-between;
-    color: black;
-}
-
-li.menu-item {
-    display: flex;
-    margin: 0.75rem;
-    font-weight: 700;
-    color: black;
-    font-size: small;
-}
-
-#nav-blog {
-    color: #87cff2;
-}
-
-li.menu-item a:hover {
-    color: black;
-} */
 
 .wrap-title-blog {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 315px;
+    height: 100px;
     background: rgb(228, 246, 255);
+
 }
+
+.blog-title{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
 
 .container-main-blog {
     display: grid;
@@ -190,17 +142,33 @@ li.menu-item a:hover {
 }
 
 .wrap-story-blog img {
-    width: 100%;
+    width:30%;
+}
+
+.wrap-story-blog{
+    display: flex;
+    flex-direction: column;
+    background-color: #f0f0f0;
+    border-radius: 1rem;
+    padding: 0.25rem;
+    width: 30%;
 }
 
 .wrap-story-blog h2 {
-    font-weight: 700;
+    font-weight: 1rem;
     color: red;
+}
+
+.button-mostrar-mas{
+    color: #87cff2;
+    background-color: white;
 }
 
 .wrap-story-blog span {
     font-style: italic;
 }
+
+
 
 .author-blog {
     padding: 0;
@@ -213,3 +181,7 @@ li.menu-item a:hover {
 span #prueba {
     width: 100%;
 }
+
+.hidden-text {
+    display: none;
+  }
