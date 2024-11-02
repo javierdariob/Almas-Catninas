@@ -6,3 +6,162 @@
 .page-testimonials h1 {
     font-size: 50px;
 }
+
+/* Hero Section */
+.hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f9f9f9;
+    padding: 50px;
+}
+
+.hero-content {
+    max-width: 50%;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.hero-button {
+    padding: 15px 30px;
+    background-color: #f9d442;
+    color: #333;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.hero-image img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+/* Info Section */
+.info-section {
+    display: flex;
+    justify-content: space-around;
+    background-color: #fff;
+    padding: 30px 0;
+    margin-top: 20px;
+}
+
+.info-card {
+    text-align: center;
+    max-width: 300px;
+    padding: 20px;
+}
+
+.icon {
+    font-size: 36px;
+    color: #f9d442;
+    margin-bottom: 10px;
+}
+
+.info-card h2 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.info-card p {
+    font-size: 14px;
+    color: #666;
+}
+
+/*Pets Section*/
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.title {
+    color: #e74c3c;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.subtitle {
+    font-size: 36px;
+    font-weight: 700;
+    color: #2c3e50;
+    margin: 10px 0;
+}
+
+.description {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.name {
+    font-size: 20px;
+    font-weight: bold;
+    color: #e74c3c;
+    margin: 15px 0 5px;
+}
+
+.breed {
+    font-size: 14px;
+    color: #7f8c8d;
+}
+
+.info {
+    font-size: 14px;
+    color: #666;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 5px 0;
+}
+
+.price {
+    font-size: 16px;
+    color: #333;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.stars {
+    color: #f39c12;
+    font-size: 16px;
+    margin-top: 10px;
+}

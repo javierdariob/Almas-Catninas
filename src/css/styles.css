@@ -525,125 +525,204 @@ header nav {
 
 /* ESTILOS FOOTER */
 .footer-contact-info {
+    background-color: #87CFF2;
+    color: #ffffff;
+    font-size: 18px;
     font-weight: 600;
-    color: white;
     display: flex;
     justify-content: space-around;
-    background-color: #87cff2;
-    padding: 10px 0;
+    padding: 40px 180px;
 }
 
-.footer-contact-info div {
-    padding: 10px;
-    border-radius: 5px;
-    display: flex;
-    align-items: center;
+.footer-contact-info i{
+    padding-right: 10px;
 }
 
-#footer-map-location {
-    height: 400px;
-    width: 100%;
+/* Map */
+.footer-map-section {
+    height: auto;
 }
 
-#footer-whatsapp-icon {
-    position: fixed;
-    bottom: 50px;
-    right: 50px;
-    z-index: 1000;
-    transition: transform 0.3s ease;
-}
-
-#footer-whatsapp-icon:hover {
-    transform: scale(1.2);
-}
-
+/* Footer Container */
 .footer-container {
     display: flex;
-    justify-content: space-between;
-    gap: 20px;
+    width: 70%;
+    margin: 0 auto;
+    justify-content: space-around;
+    padding: 5% 0;
+    color: #333;
 }
 
-.footer-left-section,
-.footer-right-section,
-.footer-support-form,
-.footer-info-section,
+.footer-left-section {
+    width: 22%;
+    margin-right: 35px;
+}
+
 .footer-horario-section {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 25%;
+    margin-right: 55px;
+}
+
+.footer-info-section {
+    width: 10%;
+}
+
+.footer-form {
     width: 30%;
 }
 
 .footer-logo {
-    max-width: 100px;
+    max-width: 40%;
+    margin-bottom: 10px;
+}
+
+.footer-social-media p {
+    margin: 10;
+    font-weight: bold;
+}
+
+.footer-social-media a{
+    padding-right: 15px;
+}
+
+.footer-social-media i{
+    color: #87cff2;
+    transition: transform 0.3s ease;
+}
+
+.footer-social-media i:hover {
+    transform: scale(1.2);
+}
+
+.footer-horario-section h3,
+.footer-info-section h3,
+.footer-form h3 {
     margin-bottom: 20px;
+    font-size: 1.2em;
 }
 
-.footer-social-media img {
-    width: 24px;
-    margin-right: 10px;
-}
-
-.footer-horario table {
-    margin-top: 10px;
+.footer-horario-section table {
     width: 100%;
     border-collapse: collapse;
 }
 
-.footer-horario td {
-    padding: 5px 0;
+.footer-horario-section td {
+    padding: 10px 0;
     border-bottom: 1px solid #ddd;
 }
 
-.footer-info ul {
-    margin-top: 10px;
+.footer-info-section ul {
     list-style: none;
+    padding: 0;
 }
 
-.footer-info li a {
+.footer-info-section li {
+    margin-bottom: 25px;
+}
+
+.footer-info-section a {
+    color: #333;
     text-decoration: none;
-    color: #000;
+    transition: color 0.3s ease, font-size 0.3s ease;
+}
+
+.footer-info-section a:hover {
+    color: #87cff2;
+    font-size: 18px;
+}
+
+/*Form*/
+.footer-form {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.footer-form p {
+    margin-top: 0;
+}
+
+.footer-form form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    justify-content: center;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group label {
     font-weight: bold;
-    margin-top: 5px;
-    display: block;
-}
-
-.footer-support-form h3 {
-    margin-bottom: 10px;
-}
-
-.footer-support-form p {
-    margin-bottom: 20px;
-}
-
-.footer-support-form label {
-    display: block;
     margin-bottom: 5px;
-    font-weight: bold;
+    text-align: left;
 }
 
-.footer-support-form input {
-    width: 100%;
+.input-group input {
     padding: 8px;
-    margin-bottom: 20px;
-    border: 1px solid #ddd;
+    border: 1px solid #ccc;
     border-radius: 4px;
 }
 
-.footer-support-form button {
-    background-color: #7CC6FE;
+.footer-form button {
+    grid-column: span 2;
+    margin-top: 15px;
+    padding: 10px 15px;
+    background-color: #87CFF2;
     color: white;
-    padding: 10px;
-    width: 100%;
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    font-size: 16px;
+    transition: background-color 0.3s ease;
 }
 
-.footer-support-form button:hover {
-    background-color: #57a9df;
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.footer-form button:hover {
+    background-color: #4e99be;
+    animation: pulse 0.6s infinite;
+}
+
+/* Estilos para el botón de WhatsApp */
+.whatsapp-fixed {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    z-index: 1000;
+}
+
+.whatsapp-fixed a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    background-color: #25D366;
+    color: #ffffff;
+    border-radius: 50%;
+    text-decoration: none;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.whatsapp-fixed a img {
+    width: 24px;
+    height: 24px;
+}
+
+.whatsapp-fixed a:hover {
+    background-color: #1ebe5d;
+    animation: pulse 0.6s infinite;
 }
 
 
