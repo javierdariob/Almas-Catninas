@@ -1,3 +1,8 @@
+html, body {
+    overflow-x: hidden;
+}
+
+
 .page-testimonials {
     height: 800px;
     text-align: center;
@@ -7,13 +12,69 @@
     font-size: 50px;
 }
 
+
+/* Contenedor de icons pets */
+.floating-decorations {
+    position: absolute;
+    top: 200px;
+    left: 180px;
+    width: 60%;
+    height: 300px;
+    pointer-events: none;
+    overflow: visible;
+    z-index: 1;
+}
+
+.decoration {
+    position: absolute;
+    width: 80px;
+}
+
+.huella1 {
+    top: 20px;
+    left: 10%;
+    animation: float 6s ease-in-out infinite;
+}
+
+.huella2 {
+    top: 120px;
+    left: 30%;
+    animation: float 8s ease-in-out infinite;
+}
+
+.perrito1 {
+    top: 60px;
+    left: 50%;
+    animation: float 7s ease-in-out infinite;
+}
+
+.perrito2 {
+    top: 200px;
+    animation: float 9s ease-in-out infinite;
+}
+
+.perrito3 {
+    top: 250px;
+    left: 60%;
+    animation: float 5s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
 /* Hero Section */
 .hero-section {
+    width: 85%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
     background-color: #f9f9f9;
-    padding: 50px;
+    padding: 150px;
 }
 
 .hero-content {
@@ -21,9 +82,15 @@
 }
 
 .hero-content h1 {
+    width: 80%;
     font-size: 48px;
-    color: #333;
+    color: #343434;
     margin-bottom: 20px;
+}
+
+.highlight-word {
+    color: #dd3f30;
+    font-size: 56.6px;
 }
 
 .hero-content p {
@@ -32,28 +99,52 @@
     margin-bottom: 30px;
 }
 
-.hero-button {
-    padding: 15px 30px;
-    background-color: #f9d442;
-    color: #333;
+.cta-button {
+    background-color: #dd3f30;
     border: none;
+    color: white;
+    padding: 10px 15px;
+    font-size: 19px;
     border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
+    font-weight: 600;
 }
+
+.cta-button {
+    animation: pulse 1s infinite;
+    transition: transform 0.2s ease;
+}
+
+.cta-button:hover {
+    animation: none;
+    transform: scale(0.9);
+    cursor: pointer;
+    background-color: #87cff2;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+}
+
+
 
 .hero-image img {
     max-width: 100%;
-    border-radius: 10px;
+    margin-top: -10vh;
 }
 
 /* Info Section */
 .info-section {
+    margin-bottom: 120px;
+    text-align: center;
     display: flex;
     justify-content: space-around;
-    background-color: #fff;
-    padding: 30px 0;
-    margin-top: 20px;
+    background-color: #e4f6ff;
+    padding: 30px 170px;
 }
 
 .info-card {
@@ -62,15 +153,13 @@
     padding: 20px;
 }
 
-.icon {
-    font-size: 36px;
-    color: #f9d442;
-    margin-bottom: 10px;
+.pet-paw {
+    width: 60px;
 }
 
 .info-card h2 {
     font-size: 20px;
-    color: #333;
+    color: #343434;
     margin-bottom: 10px;
 }
 
@@ -81,21 +170,21 @@
 
 /*Pets Section*/
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
     background-color: #f9f9f9;
-    color: #333;
+    color: #343434;
     margin: 0;
-    padding: 20px;
 }
 
 .container {
     max-width: 1200px;
     margin: 0 auto;
     text-align: center;
+    margin-bottom: 100px;
 }
 
 .title {
-    color: #e74c3c;
+    color: #dd3f30;
     font-weight: bold;
     font-size: 24px;
 }
@@ -110,7 +199,10 @@ body {
 .description {
     font-size: 16px;
     color: #666;
-    margin-bottom: 30px;
+    width: 70%;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 60px;
 }
 
 .grid {
@@ -135,11 +227,11 @@ body {
 .name {
     font-size: 20px;
     font-weight: bold;
-    color: #e74c3c;
+    color: #dd3f30;
     margin: 15px 0 5px;
 }
 
-.breed {
+.raza {
     font-size: 14px;
     color: #7f8c8d;
 }
@@ -153,9 +245,9 @@ body {
     margin: 5px 0;
 }
 
-.price {
+.status {
     font-size: 16px;
-    color: #333;
+    color: #343434;
     font-weight: bold;
     margin-top: 15px;
 }
