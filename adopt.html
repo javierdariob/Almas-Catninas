@@ -42,20 +42,20 @@
         <img src="./src/img/Adopt/three-colors-dog.webp" class="decoration perrito2">
         <img src="./src/img/Adopt/white-black-cat.webp" class="decoration perrito3">
     </div>
-        
+
 
     <div class="hero-section">
         <div class="hero-content">
             <h1>Haz de su historia una <span class="highlight-word">nueva oportunidad</span></h1>
             <p>Miles de peludos buscan un hogar. Adopta y transforma una vida.</p>
-            <button class="cta-button">Adopta ya</button>
+            <a href="#lista-mascotas" class="cta-button">Adopta</a>
         </div>
         <div class="hero-image">
             <img src="./src/img/Adopt/pets.webp" alt="Happy Pets">
         </div>
     </div>
-    
-    
+
+
     <div class="info-section">
         <div class="info-card">
             <img src="./src/img/Adopt/pet-friendly.webp" class="pet-paw" alt="pet-paw">
@@ -70,15 +70,18 @@
         <div class="info-card">
             <img src="./src/img/Adopt/pet-friendly.webp" class="pet-paw" alt="pet-paw">
             <h2>Impacto positivo en la salud</h2>
-            <p> Los estudios demuestran que convivir con animales reduce el estrés, mejora el estado de ánimo y promueve un estilo de vida más activo.</p>
+            <p> Los estudios demuestran que convivir con animales reduce el estrés, mejora el estado de ánimo y promueve
+                un estilo de vida más activo.</p>
         </div>
     </div>
-    
 
-    <div class="container">
+
+    <div class="container" id="lista-mascotas">
         <p class="title">Conoce a tu nuevo mejor amigo</p>
         <h1 class="subtitle">Peluditos esperando por su nuevo hogar</h1>
-        <p class="description">Estos peluditos están listos para brindarte su lealtad, cariño y alegría. Haz clic en su foto para conocer más sobre ellos y descubrir quién está esperando ser parte de tu familia. ¡Atrévete a cambiar una vida… y a transformar la tuya!</p>
+        <p class="description">Estos peluditos están listos para brindarte su lealtad, cariño y alegría. Haz clic en su
+            foto para conocer más sobre ellos y descubrir quién está esperando ser parte de tu familia. ¡Atrévete a
+            cambiar una vida… y a transformar la tuya!</p>
         <div class="grid">
             <div class="card">
                 <img src="./src/img/Adopt/one-dog.webp" alt="Mister Tartosh">
@@ -142,8 +145,19 @@
             </div>
         </div>
     </div>
-    
 
+    <!-- POPUP MODAL -->
+    <div id="pet-popup" class="popup-overlay" style="display: none;">
+        <div class="popup-content">
+            <span class="close-btn" onclick="closePopup()">&times;</span>
+            <h2 id="popup-name">Nombre de la mascota</h2>
+            <img id="popup-image" src="" alt="Foto de la mascota">
+            <p id="popup-raza">Raza: </p>
+            <p id="popup-birth">Nacimiento: </p>
+            <p id="popup-status">Estado: </p>
+            <p id="popup-description">Descripción de la mascota.</p>
+        </div>
+    </div>
 
     <!-- SECCIÓN FOOTER -->
     <section>
@@ -237,32 +251,32 @@
                         <label for="footer-name">Nombre completo:</label>
                         <input type="text" id="footer-name" name="name" required>
                     </div>
-            
+
                     <div class="input-group">
                         <label for="footer-whatsapp">Número de WhatsApp:</label>
                         <input type="text" id="footer-whatsapp" name="whatsapp" required>
                     </div>
-            
+
                     <div class="input-group">
                         <label for="footer-email">Correo electrónico:</label>
                         <input type="email" id="footer-email" name="email" required>
                     </div>
-            
+
                     <div class="input-group">
                         <label for="footer-subject">Asunto:</label>
                         <input type="text" id="footer-subject" name="subject" value="Donar" readonly>
                     </div>
-            
+
                     <button type="submit">Enviar</button>
                 </form>
             </div>
 
-        <!-- Botón de WhatsApp -->
-        <div class="whatsapp-fixed">
-            <a href="https://wa.me/573004567890" target="_blank">
-                <i class="fa-brands fa-whatsapp fa-2xl"></i>
-            </a>
-        </div>
+            <!-- Botón de WhatsApp -->
+            <div class="whatsapp-fixed">
+                <a href="https://wa.me/573004567890" target="_blank">
+                    <i class="fa-brands fa-whatsapp fa-2xl"></i>
+                </a>
+            </div>
     </section>
 
     <script src="./src/js/adopt-script.js"></script>

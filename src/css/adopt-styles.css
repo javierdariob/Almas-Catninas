@@ -1,5 +1,6 @@
 html, body {
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 
@@ -100,6 +101,7 @@ html, body {
 }
 
 .cta-button {
+    display: inline-block; /* Asegura que el enlace se comporte como un botón */
     background-color: #dd3f30;
     border: none;
     color: white;
@@ -107,29 +109,26 @@ html, body {
     font-size: 19px;
     border-radius: 5px;
     font-weight: 600;
-}
-
-.cta-button {
-    animation: pulse 1s infinite;
-    transition: transform 0.2s ease;
+    animation: pulse 1s infinite; /* Llama a la animación pulse */
+    transition: transform 0.2s ease; /* Transición para el hover */
+    text-decoration: none; /* Remueve el subrayado del enlace */
 }
 
 .cta-button:hover {
-    animation: none;
-    transform: scale(0.9);
-    cursor: pointer;
-    background-color: #87cff2;
+    animation: none; /* Detiene la animación en hover */
+    transform: scale(0.9); /* Efecto de reducir tamaño */
+    cursor: pointer; /* Cambia el cursor a puntero */
+    background-color: #87cff2; /* Cambia el color de fondo en hover */
 }
 
 @keyframes pulse {
     0%, 100% {
-        transform: scale(1);
+        transform: scale(1); /* Tamaño original */
     }
     50% {
-        transform: scale(1.1);
+        transform: scale(1.1); /* Aumento al 110% */
     }
 }
-
 
 
 .hero-image img {
@@ -217,6 +216,7 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
     text-align: center;
+    cursor: pointer;
 }
 
 .card img {
@@ -257,3 +257,46 @@ body {
     font-size: 16px;
     margin-top: 10px;
 }
+
+/* Estilo para el overlay del popup */
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+/* Estilo para el contenido del popup */
+.popup-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 500px;
+    height: 80vh;
+    text-align: center;
+    position: relative;
+}
+
+#popup-image {
+    width: 100%; /* Ajusta según sea necesario */
+    height: auto; /* Mantiene la proporción */
+    max-width: 300px; /* Controla el tamaño máximo */
+}
+
+/* Botón de cerrar */
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    color: #333;
+}
+
