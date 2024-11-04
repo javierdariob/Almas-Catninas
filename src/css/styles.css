@@ -569,6 +569,7 @@ header nav {
 
 .footer-form {
     width: 30%;
+    padding-left: 60px;     /* AGREGADO JEFF PARA SEPARAR FORM DE INFO */
 }
 
 .footer-logo {

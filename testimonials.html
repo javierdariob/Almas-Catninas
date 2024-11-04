@@ -42,7 +42,7 @@
 
     <!-- SECCION MAIN TESTIMONIOS -->
     <section class="testimonial-main">
-
+        
         <header class="bg-animate">
             <section class="contenedor">
                 <div class="video-gallery">
@@ -95,19 +95,31 @@
 
     <!-- SECCIÓN FOOTER -->
     <section>
+        <!-- Info -->
         <div class="footer-contact-info">
-            <div id="footer-address"><i class="fa-solid fa-location-dot fa-xl"></i>Dirección completa</div>
-            <div id="footer-celphone-number"><i class="fas fa-phone-alt fa-xl"></i> Teléfono</div>
-            <div id="footer-email"><i class="fas fa-envelope fa-xl"></i> Correo electrónico</div>
+            <div class="contact-info-item">
+                <i class="fas fa-envelope fa-xl"></i>
+                <span>correo@almascatninas.com</span>
+            </div>
+            <div class="contact-info-item">
+                <i class="fas fa-phone-alt fa-xl"></i>
+                <span>+57 123 456 7890</span>
+            </div>
+            <div class="contact-info-item">
+                <i class="fa-solid fa-location-dot fa-xl"></i>
+                <span>Calle 123, Ciudad</span>
+            </div>
         </div>
 
-        <div id="footer-map-location"></div>
+        <!-- Mapa -->
+        <div class="footer-map-section">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1984.629453417131!2d-75.579255!3d6.270931!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e44291c8b377af9%3A0x8e332e4c1bbf32de!2sLos%20Colores%2C%20Medell%C3%ADn%2C%20Antioquia!5e0!3m2!1ses!2sco!4v1665584015955!5m2!1ses!2sco"
+                width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
 
-        <a href="https://wa.me/" target="_blank" id="footer-whatsapp-icon">
-            <i class="fa-brands fa-square-whatsapp fa-4x" style="color: #0ed81b;"></i>
-        </a>
-        <!-- Info -->
         <div class="footer-container">
+            <!-- Info -->
             <div class="footer-left-section">
                 <img src="src/img/logo1-new.png" alt="Almas Catninas" class="footer-logo">
                 <img src="src/img/logo2-new.png" alt="Almas Catninas" class="footer-logo">
@@ -115,8 +127,8 @@
                     recuperación.</p>
                 <div class="footer-social-media">
                     <p>Síguenos en:</p>
-                    <a href="#" target="_blank"><img src="facebook-icon.png" alt="Facebook"></a>
-                    <a href="#" target="_blank"><img src="instagram-icon.png" alt="Instagram"></a>
+                    <a href="#" target="_blank"><i class="fa-brands fa-facebook fa-3x"></i></a>
+                    <a href="#" target="_blank"><i class="fa-brands fa-square-instagram fa-3x"></i></a>
                 </div>
             </div>
 
@@ -132,38 +144,72 @@
                         <td>Martes</td>
                         <td>9:00 AM - 6:00 PM</td>
                     </tr>
+                    <tr>
+                        <td>Miércoles</td>
+                        <td>9:00 AM - 6:00 PM</td>
+                    </tr>
+                    <tr>
+                        <td>Jueves</td>
+                        <td>9:00 AM - 6:00 PM</td>
+                    </tr>
+                    <tr>
+                        <td>Viernes</td>
+                        <td>9:00 AM - 6:00 PM</td>
+                    </tr>
+                    <tr>
+                        <td>Sábado</td>
+                        <td>Cerrado</td>
+                    </tr>
                 </table>
             </div>
 
-            <!-- Menu -->
+            <!-- Nav -->
             <div class="footer-info-section">
                 <h3>INFO:</h3>
                 <ul>
                     <li><a href="#">Inicio</a></li>
                     <li><a href="#">Sobre</a></li>
+                    <li><a href="#">Nosotros</a></li>
+                    <li><a href="#">Adopta</a></li>
+                    <li><a href="#">Testimonios</a></li>
+                    <li><a href="#">Blog</a></li>
                 </ul>
             </div>
 
             <!-- Form -->
-            <div class="footer-support-form">
+            <div class="footer-form">
                 <h3>¿Quieres apoyar?</h3>
                 <p>¡Déjanos tus datos!</p>
-                <form id="footer-supportForm">
-                    <label for="footer-name">Nombre completo:</label>
-                    <input type="text" id="footer-name" name="name" required>
-
-                    <label for="footer-whatsapp">Número de WhatsApp:</label>
-                    <input type="text" id="footer-whatsapp" name="whatsapp" required>
-
-                    <label for="footer-email">Correo electrónico:</label>
-                    <input type="email" id="footer-email" name="email" required>
-
-                    <label for="footer-subject">Asunto:</label>
-                    <input type="text" id="footer-subject" name="subject" value="Donar" readonly>
-
+                <form id="footer-Form">
+                    <div class="input-group">
+                        <label for="footer-name">Nombre completo:</label>
+                        <input type="text" id="footer-name" name="name" required>
+                    </div>
+            
+                    <div class="input-group">
+                        <label for="footer-whatsapp">Número de WhatsApp:</label>
+                        <input type="text" id="footer-whatsapp" name="whatsapp" required>
+                    </div>
+            
+                    <div class="input-group">
+                        <label for="footer-email">Correo electrónico:</label>
+                        <input type="email" id="footer-email" name="email" required>
+                    </div>
+            
+                    <div class="input-group">
+                        <label for="footer-subject">Asunto:</label>
+                        <input type="text" id="footer-subject" name="subject" value="Donar" readonly>
+                    </div>
+            
                     <button type="submit">Enviar</button>
                 </form>
             </div>
+
+        <!-- Botón de WhatsApp -->
+        <div class="whatsapp-fixed">
+            <a href="https://wa.me/573004567890" target="_blank">
+                <i class="fa-brands fa-whatsapp fa-2xl"></i>
+            </a>
         </div>
     </section>
 
