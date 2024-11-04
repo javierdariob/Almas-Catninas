@@ -453,6 +453,11 @@ header nav {
     cursor: pointer;
 }
 
+#btnAdopt a {
+    text-decoration: none;
+    color: #87cff2;
+}
+
 .adopt-btnPrev {
     background: url(../img/captura-prev.PNG) no-repeat;
     width: 63px;
