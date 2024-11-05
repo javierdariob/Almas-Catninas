@@ -23,7 +23,9 @@ p, h3, li, ul, ol, h2, td, label, div, nav, a {
     font-family: 'League Spartan';
     font-size: 70px;
     margin-bottom: 7px;
+    cursor: pointer;
 }
+
 
 #h3-individual {
     font-size: 50px;
@@ -373,8 +375,10 @@ header nav {
 
 .buttonBlue {
     background-color: #87cff2;
+    font-size: large;
     color: white;
     border: 0;
+    cursor: pointer;
 }
 
 .wrap-entry {
